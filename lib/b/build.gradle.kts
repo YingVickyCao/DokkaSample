@@ -1,23 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.dokka.library)
 }
 
 android {
-    namespace = "com.example.kotlin.test.app"
+    namespace = "com.example.kotlin.b"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.kotlin.dokk.app"
         minSdk = 29
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -27,25 +22,23 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "17"
-    }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
+        jvmTarget = "1.8"
     }
 }
 
 dependencies {
-    api(project(":lib1"))
-    api(project(":lib"))
+
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.appcompat)
 
     testImplementation(libs.junit)
-
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+}
+tasks.dokkaHtmlPartial.configure {
+
 }

@@ -31,8 +31,8 @@ android {
 }
 
 dependencies {
-    api(project(":lib2"))
-    api(project(":lib3"))
+    api(project(":lib:lib2"))
+    api(project(":lib:b"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 
@@ -40,4 +40,13 @@ dependencies {
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+//tasks.dokkaHtmlMultiModule.configure {
+//    outputDirectory.set(buildDir.resolve("dokkaCustomMultiModuleOutput"))
+//    documentationFileName.set("README.md")
+//}
+
+tasks.dokkaHtmlMultiModule.configure {
+
 }
