@@ -1,4 +1,4 @@
-package com.example.kotlin.test.app
+package com.example.kotlin.lib.app
 
 import android.app.Activity
 import android.os.Bundle
