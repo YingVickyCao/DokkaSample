@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin.b"
+    namespace = "com.example.kotlin.lib.b"
     compileSdk = 34
 
     defaultConfig {
