@@ -38,4 +38,4 @@ include(":lib1")
 
 include(":lib")
 include(":lib:lib2")
-include(":lib:b")
+include(":lib:lib3")
