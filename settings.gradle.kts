@@ -34,4 +34,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "DokkaSample"
 include(":app")
- 
+include(":lib")
+include(":lib1")
+include(":lib2")
