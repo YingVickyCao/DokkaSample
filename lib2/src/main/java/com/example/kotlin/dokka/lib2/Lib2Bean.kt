@@ -1,4 +1,4 @@
-package com.example.kotlin.dokka.lib.lib2
+package com.example.kotlin.dokka.lib2
 
 
 /**

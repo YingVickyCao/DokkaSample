@@ -32,7 +32,7 @@ android {
 
 dependencies {
     api(project(":lib2"))
-    api(project(":lib2"))
+    api(project(":lib3"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 

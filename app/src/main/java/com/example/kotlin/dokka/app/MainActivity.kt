@@ -3,9 +3,9 @@ package com.example.kotlin.dokka.app
 import android.app.Activity
 import android.os.Bundle
 import android.widget.TextView
-import com.example.kotlin.dokka.lib.lib1.Lib1Bean
-import com.example.kotlin.dokka.lib.lib2.Lib2Bean
-import com.example.kotlin.dokka.lib.lib3.Lib3Bean
+import com.example.kotlin.dokka.lib1.Lib1Bean
+import com.example.kotlin.dokka.lib2.Lib2Bean
+import com.example.kotlin.dokka.lib3.Lib3Bean
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

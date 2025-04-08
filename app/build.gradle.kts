@@ -41,7 +41,7 @@ android {
 }
 
 dependencies {
-    api(project(":lib3"))
+    api(project(":lib1"))
     api(project(":lib"))
     implementation(libs.androidx.core.ktx)
 

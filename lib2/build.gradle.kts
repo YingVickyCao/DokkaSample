@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin.dokka.lib.lib2"
+    namespace = "com.example.kotlin.dokka.lib2"
     compileSdk = 34
 
     defaultConfig {
@@ -38,4 +38,9 @@ dependencies {
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+
+tasks.dokkaHtmlPartial.configure {
+    failOnWarning.set(false)
 }

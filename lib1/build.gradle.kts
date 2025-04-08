@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin.dokka.lib.lib1"
+    namespace = "com.example.kotlin.dokka.lib1"
     compileSdk = 34
 
     defaultConfig {
