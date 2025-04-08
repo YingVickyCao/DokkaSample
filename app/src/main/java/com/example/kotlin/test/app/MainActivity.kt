@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.kotlin.b.Lib3Bean
 import com.example.kotlin.dokka.lib1.Lib1Bean
-import com.example.kotlin.libs2.Lib2Bean
+import com.example.kotlin.lib.lib2.Lib2Bean
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

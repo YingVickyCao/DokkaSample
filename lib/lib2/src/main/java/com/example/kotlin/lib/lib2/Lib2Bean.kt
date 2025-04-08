@@ -1,4 +1,4 @@
-package com.example.kotlin.libs2
+package com.example.kotlin.lib.lib2
 
 /**
  * Lib1 bean
