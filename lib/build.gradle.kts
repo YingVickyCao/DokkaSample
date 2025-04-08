@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin.dokka.lib"
+    namespace = "com.example.kotlin.lib"
     compileSdk = 34
 
     defaultConfig {
@@ -32,7 +32,7 @@ android {
 
 dependencies {
     api(project(":lib:lib2"))
-    api(project(":lib:b"))
+    api(project(":lib:lib3"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 

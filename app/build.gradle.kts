@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.kotlin.test.app"
+    namespace = "com.example.kotlin.lib.app"
     compileSdk = 34
 
     defaultConfig {
