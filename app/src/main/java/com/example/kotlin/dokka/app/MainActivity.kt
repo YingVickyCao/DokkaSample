@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.kotlin.dokka.lib.lib1.Lib1Bean
 import com.example.kotlin.dokka.lib.lib2.Lib2Bean
+import com.example.kotlin.dokka.lib.lib3.Lib3Bean
 
 class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,9 @@ class MainActivity : Activity() {
 
         val data2 = Lib2Bean("code")
 
-        val data = "$data1, $data2"
+        val data3 = Lib3Bean(101)
+
+        val data = "$data1\n$data2\n$data3"
         textView.text = data
     }
 }
