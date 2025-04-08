@@ -30,6 +30,8 @@ android {
 }
 
 dependencies {
+    api(project(":lib1"))
+    api(project(":lib2"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 
